@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Stats from './components/Stats'
 import Slider from './components/Slider'
 import { SliderData } from './components/SliderData'
+import Features from './components/Features'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <Stats />
       <Slider slides={SliderData} />
+      <Features />
     </div>
   )
 }

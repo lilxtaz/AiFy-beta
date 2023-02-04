@@ -278,6 +278,21 @@ body{
 
 }
 
+.card-body{
+
+    height: 47vh;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--mainColorLight);
+    border-radius: 20px;
+    padding: 0 2rem;
+    margin: 3rem 4rem;
+    color: var(--textColor);
+
+}
+
 header {
 
     display: flex;

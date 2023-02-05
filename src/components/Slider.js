@@ -25,7 +25,7 @@ const Slider = ({slides}) => {
     <div className='slider-block' >
         <div className='slider-block-text'>
 
-            <h1>What people are saying about <Typical loop={Infinity} wrapper="b" steps={['us', 1000, 'AiFy', 1000]} /></h1>
+            <h1>What people are saying about <Typical loop={Infinity} wrapper="b" steps={['us', 2500, 'AiFy', 2500]} /></h1>
             
         </div>
         <div className='slider'>

@@ -18,7 +18,7 @@
     --textColorLight: #85929E;
     --backgroundColor: linear-gradient(.25turn, #202427, 30%, #000000);
     --headingTextColor: linear-gradient(.25turn, #a4a5a7, 30%, #000000);
-    --headerimgGradient: linear-gradient(90deg, #f4c4f3 0%, #000000 100%);
+    --headerimgGradient: linear-gradient(90deg, #ebe1ea 0%, #000000 100%);
 
 }
 
@@ -87,8 +87,8 @@ body{
 .backblur{
 
     background: var(--headerimgGradient);
-    filter: blur(1000px);
-    opacity: 0.25;
+    filter: blur(100px);
+    opacity: 0.2;
 
 }
 
@@ -280,16 +280,30 @@ body{
 
 .card-body{
 
-    height: 47vh;
-    width: 500px;
+    height: 45vh;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--mainColorLight);
     border-radius: 20px;
     padding: 0 2rem;
-    margin: 3rem 4rem;
+    margin: 1.5rem 4rem;
     color: var(--textColor);
+
+}
+
+.card-body h1{
+
+    margin:  0 2rem 0 0;
+    padding-bottom: 7rem;
+
+}
+
+.card-body img{
+
+    padding: 4rem 7rem 0 0;
+
 
 }
 
@@ -298,10 +312,36 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     height: 80px;
     padding: 0 4rem;
     background-color: var(--mainColor);
     color: var(--textColor);
+
+}
+
+.nav-country{
+
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+
+}
+
+.nav-country p{
+
+    margin-top: -0.3rem;
+
+}
+
+.nav-country-flag{
+
+    margin-right: 0.5rem;
+    
 
 }
 

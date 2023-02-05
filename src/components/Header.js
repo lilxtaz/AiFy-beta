@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className='container'>
 
-        <div className='text-conatiner'><h1 className='headerTitle'>AiFy <br/><h3 className='subheadingTitle'>GPT AI Chat Bot</h3></h1></div>
+        <div className='text-conatiner'><h1 className='headerTitle'>AiFy <br/></h1><h3 className='subheadingTitle'>GPT AI Chat Bot</h3></div>
         <h3 className='headerText'>Access Chat GPT from any app on your<br /> device and get instant responses to your prompts.</h3>
         <Button sx={{backgroundColor:'white', color: 'black', width: '150px', margin: '30px 0' }}
             onMouseEnter={() => setdownloadbtnColor(true)}

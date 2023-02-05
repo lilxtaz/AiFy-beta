@@ -1,9 +1,23 @@
 import {FaBars, FaTimes} from "react-icons/fa"
-import React, {useRef}from 'react'
+import React, {useEffect, useRef, useState}from 'react'
 import "../styles/styles.css"
 import logo from '../images/logo.png';
+import { FlagIcon } from "react-flag-kit";
 
 function Navbar(){
+
+    const [country, setCountry] = useState('');
+
+    useEffect(() => {
+        fetch('https://extreme-ip-lookup.com/json/?key=aYQiAaX5GiBJmWdVuUxi')
+        .then( res => res.json())
+        .then(response => {
+          setCountry(response.countryCode);
+        })
+        .catch((data, status) => {
+          console.log('Request failed:', data);
+        });
+    },[])
 
     const navRef = useRef();
 
@@ -34,6 +48,10 @@ function Navbar(){
             <FaBars />
 
         </button>
+
+        <div className="nav-country"><FlagIcon code={country} height="16" width="26" className="nav-country-flag"/><p>{country}</p></div> 
+        
+        
 
     </header>);
 

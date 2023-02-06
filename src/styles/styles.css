@@ -292,7 +292,7 @@ body{
 .card{
 
     background: var(--textColor);
-    padding: 3rem 5rem;
+    padding: 3rem 5rem 2.35rem 5rem;
     
 
 }

@@ -21,7 +21,7 @@ const Card = (props) => {
 
             <motion.h1 layout="position" >{props.title}</motion.h1>
             {downBtn && (<motion.div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <ArrowDropDownIcon fontSize='large' />
+              <ArrowDropDownIcon fontSize='large' sx={{color: '#3c4752'}}/>
             </motion.div>)}
             {isOpen && 
             (<motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} className='expand'>

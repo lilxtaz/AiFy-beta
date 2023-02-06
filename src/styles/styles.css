@@ -181,6 +181,7 @@ body{
     padding: 0 10rem;
     margin: 3rem 4rem;
     color: var(--textColor);
+    box-shadow: 0px 10px 30px rgba(133, 146, 158, 0.2);
 
 }
 
@@ -278,32 +279,61 @@ body{
 
 }
 
-.card-body{
-
-    height: 45vh;
-    width: 600px;
+.card-container{
+    
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.card{
+
+    background: var(--textColor);
+    padding: 3rem 5rem;
+    
+
+}
+
+.card h1{
+
+    text-align: center;
+    color: var(--mainColor);
+
+}
+
+.expand{
+
+    padding-top: 1rem;
+    line-height: 150%;
+    width: 20rem;
+    text-align: center;
+    color: var(--mainColor);
+
+}
+
+.tutorial-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 5rem;
     background: var(--mainColorLight);
-    border-radius: 20px;
-    padding: 0 2rem;
-    margin: 1.5rem 4rem;
+
+}
+
+.tutorial-text{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0 2rem 0;
+    background: var(--mainColorLight);
     color: var(--textColor);
-
-}
-
-.card-body h1{
-
-    margin:  0 2rem 0 0;
-    padding-bottom: 7rem;
-
-}
-
-.card-body img{
-
-    padding: 4rem 7rem 0 0;
-
+    font-size: 52px;
+    letter-spacing: 0.25rem;
+    text-shadow: 1px 1px 2px white, 0 0 0.2em var(--mainColorLight), 0 0 1em var(--mainColorLight);
 
 }
 
@@ -311,7 +341,7 @@ header {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     height: 80px;
     padding: 0 4rem;

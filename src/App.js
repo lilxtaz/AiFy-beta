@@ -5,6 +5,7 @@ import Stats from './components/Stats'
 import Slider from './components/Slider'
 import { SliderData } from './components/SliderData'
 import Tutorial from './components/Tutorial'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
       <Stats />
       <Slider slides={SliderData} />
       <Tutorial />
+      <Footer />
     </div>
   )
 }

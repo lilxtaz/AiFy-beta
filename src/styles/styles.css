@@ -11,7 +11,8 @@
 
 :root{
 
-    --mainColor: #3c4752;                     
+    --mainColor: #3c4752;    
+    --mainColorVeryLight: #dbdbdb;
     --mainColorLight: #85929E;
     --mainColorDark: #21262b;
     --textColor: #ffffff;
@@ -313,6 +314,29 @@ body{
 
 }
 
+.card-btn{
+
+    color: var(--mainColorDark) !important;
+    margin-top: 15px !important; 
+    align-items: center !important;
+
+}
+
+.card-btn:hover{
+
+    background-color:var(--mainColorVeryLight) !important; 
+    color: var(--mainColorDark) !important;
+    margin-top: 15px !important; 
+    align-items: center !important;
+
+}
+
+.card-down-arrow{
+
+    align-items: center !important;
+
+}
+
 .tutorial-container{
 
     display: flex;
@@ -333,7 +357,7 @@ body{
     color: var(--textColor);
     font-size: 52px;
     letter-spacing: 0.25rem;
-    text-shadow: 1px 1px 2px white, 0 0 0.2em var(--mainColorLight), 0 0 1em var(--mainColorLight);
+    text-shadow: 1px 1px 2px white, 0 0 1em var(--mainColorLight), 0 0 1em var(--mainColorLight);
 
 }
 

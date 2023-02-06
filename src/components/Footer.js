@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <p style={styles.text}>
-        Copyright &copy; {new Date().getFullYear()} AiFy. All rights reserved.
+        Copyright &copy; {new Date().getFullYear()} Your Company. All rights reserved.
       </p>
     </footer>
   );

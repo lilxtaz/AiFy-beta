@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <p style={styles.text}>
-        Copyright &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+        Copyright &copy; {new Date().getFullYear()} AiFy. All rights reserved.
       </p>
     </footer>
   );
@@ -13,7 +13,7 @@ const Footer = () => {
 const styles = {
   footer: {
     color: '#fff',
-    padding: 'rem',
+    padding: '2rem',
     textAlign: 'center',
   },
   text: {

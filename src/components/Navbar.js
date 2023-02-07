@@ -3,6 +3,7 @@ import React, {useEffect, useRef, useState}from 'react'
 import "../styles/styles.css"
 import logo from '../images/logo.png';
 import { FlagIcon } from "react-flag-kit";
+import { Link } from "react-router-dom";
 
 function Navbar(){
 
@@ -31,8 +32,9 @@ function Navbar(){
 
         <div className="container-logo"><img src={logo} className="logo" alt="logo" width="60" height="60" ></img></div>
         <nav ref={navRef}>
-
-            <a href="/#home">Home</a>
+ 
+            <a href={() => false}><Link to={'/home'}>Home</Link></a>
+            <a href={() => false}><Link to={'/get-started'}>Get Started</Link></a>
             <a href="/#download">Download</a>
             <a href="/#about">About</a>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import Button from '@mui/material-next/Button';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Link } from 'react-router-dom';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -30,7 +31,7 @@ const Card = (props) => {
                 {props.content}
               </p>
 
-              <Button className='card-btn' variant='text' ><KeyboardArrowRightIcon fontSize="small" sx={{opacity: '0'}}/>Explore<KeyboardArrowRightIcon fontSize="small"/></Button>
+              <Button component={Link} to={'/get-started'} className='card-btn' variant='text' ><KeyboardArrowRightIcon fontSize="small" sx={{opacity: '0'}}/>Explore<KeyboardArrowRightIcon fontSize="small"/></Button>
 
             </motion.div>)}
 

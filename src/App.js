@@ -1,24 +1,20 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Header from './components/Header'
-import Stats from './components/Stats'
-import Slider from './components/Slider'
-import { SliderData } from './components/SliderData'
-import Tutorial from './components/Tutorial'
-import Footer from './components/Footer'
-
+import { Route, Routes } from 'react-router-dom'
+import Home from './Home'
+import Started from './Started'
 const App = () => {
 
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <Stats />
-      <Slider slides={SliderData} />
-      <Tutorial />
-      <Footer />
-    </div>
-  )
+  
+    <Routes>
+
+      <Route path='/' element={<Home />}/>
+      <Route path='/home' element={<Home />}/>
+      <Route path='/get-started' element={<Started />}/>
+
+    </Routes>)
+
+
 }
 
 export default App

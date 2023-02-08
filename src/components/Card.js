@@ -31,7 +31,7 @@ const Card = (props) => {
                 {props.content}
               </p>
 
-              <Button component={Link} to={'/get-started'} className='card-btn' variant='text' ><KeyboardArrowRightIcon fontSize="small" sx={{opacity: '0'}}/>Explore<KeyboardArrowRightIcon fontSize="small"/></Button>
+              <Button component={Link} to={props.page} className='card-btn' variant='text' ><KeyboardArrowRightIcon fontSize="small" sx={{opacity: '0'}}/>Explore<KeyboardArrowRightIcon fontSize="small"/></Button>
 
             </motion.div>)}
 

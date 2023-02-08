@@ -30,7 +30,7 @@ function Navbar(){
 
     return (<header>
 
-        <div className="container-logo"><img src={logo} className="logo" alt="logo" width="60" height="60" ></img></div>
+        <div className="container-logo"><Link to={'/'}><img src={logo} className="logo" alt="logo" width="60" height="60" ></img></Link></div>
         <nav ref={navRef}>
  
             <a href={() => false}><Link to={'/home'}>Home</Link></a>

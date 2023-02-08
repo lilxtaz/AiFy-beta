@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import SideNav from './components/SideNav'
-import StartedHeader from './components/StartedHeader'
+import UsageHeader from './components/UsageHeader'
 
-const Started = () => {
+const Usage = () => {
   return (
     <div>
         <SideNav />
         <Navbar />
-        <StartedHeader />
+        <UsageHeader />
         
         
         
@@ -16,4 +16,4 @@ const Started = () => {
   )
 }
 
-export default Started
+export default Usage

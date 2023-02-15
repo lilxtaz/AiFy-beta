@@ -1,19 +1,20 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import SideNav from './components/SideNav'
-import StartedHeader from './components/StartedHeader'
+import APIHeader from './components/APIHeader'
+import Footer from './components/Footer'
 
-const Started = () => {
+const API = () => {
   return (
     <div>
         <SideNav />
         <Navbar />
-        <StartedHeader />
-        
+        <APIHeader />
+        <Footer />
         
         
     </div>
   )
 }
 
-export default Started
+export default API

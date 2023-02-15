@@ -52,6 +52,7 @@ const Slider = ({slides}) => {
 
         })}
         </div>
+        
     </div>
   )
 }

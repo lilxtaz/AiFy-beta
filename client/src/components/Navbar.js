@@ -4,10 +4,13 @@ import "../styles/styles.css"
 import logo from '../images/logo.png';
 import { FlagIcon } from "react-flag-kit";
 import { Link } from "react-router-dom";
+import * as BiIcons from 'react-icons/bi'
+
 
 function Navbar(){
 
     const [country, setCountry] = useState('');
+    const [chevron, setChevron] = useState(false);
 
     useEffect(() => {
         fetch('https://extreme-ip-lookup.com/json/?key=aYQiAaX5GiBJmWdVuUxi')
@@ -25,6 +28,7 @@ function Navbar(){
     const showNavbar = ()=>{
 
         navRef.current.classList.toggle("responsive_nav");
+        setChevron(!chevron);
 
     }
 
@@ -33,10 +37,9 @@ function Navbar(){
         <div className="container-logo"><Link to={'/'}><img src={logo} className="logo" alt="logo" width="60" height="60" ></img></Link></div>
         <nav ref={navRef}>
  
-            <a href={() => false}><Link to={'/home'}>Home</Link></a>
-            <a href={() => false}><Link to={'/get-started'}>Get Started</Link></a>
-            <a href="/#download">Download</a>
-            <a href="/#about">About</a>
+            <a href="/#about"><Link to={'/home'}>Home{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
+            <a href="/#about"><Link to={'/get-started'}>Get Started{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
+            <a href="/#about"><Link to={'/about'}>About{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
 
                 <FaTimes />

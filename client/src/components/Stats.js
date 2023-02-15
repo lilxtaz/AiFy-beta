@@ -16,21 +16,21 @@ const Stats = () => {
 
   return (
     <div className='props-container'>
-    <div>
+    <div className='prop'>
       <div  className='props-icon'
             onMouseEnter={() => setIconOneState(true)}
             onMouseLeave={() => setIconOneState(false)}>
       {iconOneState?<HowToRegIcon fontSize="large"/>:<HowToRegOutlinedIcon fontSize="large"/>}</div>
       <Properties title="Accessibilty" content="Easily usable within any app."/>
       </div>
-      <div>
+      <div className='prop'>
       <div  className='props-icon'
             onMouseEnter={() => setIconTwoState(true)}
             onMouseLeave={() => setIconTwoState(false)}>
       {iconTwoState?<KeyboardVoiceIcon fontSize="large"/>:<KeyboardVoiceOutlinedIcon fontSize="large"/>}</div>
       <Properties title="Voice Control" content="A built in voice assistant for smoother sailing."/>
       </div>
-      <div>
+      <div className='prop'>
       <div  className='props-icon'
             onMouseEnter={() => setIconThreeState(true)}
             onMouseLeave={() => setIconThreeState(false)}>

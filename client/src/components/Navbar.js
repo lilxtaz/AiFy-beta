@@ -1,3 +1,5 @@
+ /* eslint-disable */
+
 import {FaBars, FaTimes} from "react-icons/fa"
 import React, {useEffect, useRef, useState}from 'react'
 import "../styles/styles.css"
@@ -5,6 +7,7 @@ import logo from '../images/logo.png';
 import { FlagIcon } from "react-flag-kit";
 import { Link } from "react-router-dom";
 import * as BiIcons from 'react-icons/bi'
+import { motion } from "framer-motion";
 
 
 function Navbar(){
@@ -32,14 +35,25 @@ function Navbar(){
 
     }
 
-    return (<header>
+    return (<motion.header
+    
+    initial={{ y: -50 }}
+    animate={{ y: 0 }}
+    transition={{ duration: 0.15 }}
+    
+    >
 
         <div className="container-logo"><Link to={'/'}><img src={logo} className="logo" alt="logo" width="60" height="60" ></img></Link></div>
         <nav ref={navRef}>
  
-            <a href="/#about"><Link to={'/home'}>Home{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
-            <a href="/#about"><Link to={'/get-started'}>Get Started{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
-            <a href="/#about"><Link to={'/about'}>About{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
+            <a><Link to={'/home'}>Home{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
+            <a><Link to={'/get-started'}>Get Started{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
+
+            {(chevron&&<a><Link to={'/usage'}>Usage{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>)}
+            {(chevron&&<a><Link to={'/api-key'}>API Key{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>)}
+
+            <a><Link to={'/about'}>About{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>
+
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
 
                 <FaTimes />
@@ -58,7 +72,7 @@ function Navbar(){
         
         
 
-    </header>);
+    </motion.header>);
 
 }
 

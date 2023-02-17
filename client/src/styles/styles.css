@@ -237,6 +237,7 @@ body{
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+    min-width: 500px;
 
 }
 
@@ -252,12 +253,14 @@ body{
 
     margin: 2rem;
     font-weight: 600;
+    font-size: 22px;
 
 }
 
 .slide-review h3{
 
     font-weight: 400;
+    font-size: 16px;
 
 }
 
@@ -575,7 +578,7 @@ span{
 
 .newsletter-btn{
 
-    margin-top: 5rem;
+    margin-top: 1rem;
 
 }
 
@@ -811,6 +814,12 @@ header .nav-btn{
 
 @media only screen and (max-width: 1024px){
 
+    .popup-inner{
+
+        max-width: 50%;
+
+    }
+
     .about-wierd{
 
         margin: 0;
@@ -865,7 +874,7 @@ header .nav-btn{
     .started-img{
 
         bottom: unset;
-        left: 405px;
+        left: 240px;
 
     }
 
@@ -1076,7 +1085,7 @@ header .nav-btn{
     .slide-review h1{
     
         font-weight: 600;
-        font-size: 22px;
+        font-size: 18px;
     
     }
     
@@ -1171,7 +1180,7 @@ header .nav-btn{
         gap: 3rem;
         background-color: rgba(22, 22, 23, .99);;
         transition: 1s;
-        transform: translateY(-100vh);
+        transform: translateY(-200vh);
         padding: 14rem 4rem;
         
 

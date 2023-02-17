@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card'
+import { motion } from 'framer-motion'
 
 const Tutorial = () => {
   return (
@@ -7,9 +8,30 @@ const Tutorial = () => {
     <div><h1 className='tutorial-text'>FAQ</h1></div>
     <div className='tutorial-container'>
         
-        <Card title="Get Started 🚀" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magni cum incidunt exercitationem, ipsam debitis laboriosam dicta nihil iste totam?" page="/get-started"/>
-        <Card title="Get API Key 🔑" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magni cum incidunt exercitationem, ipsam debitis laboriosam dicta nihil iste totam?" page="/api-key"/>
-        <Card title="Team 🤝" content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magni cum incidunt exercitationem, ipsam debitis laboriosam dicta nihil iste totam?" page="/about"/>
+        <motion.div
+        
+        initial={{ x: -20 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{type: 'spring', ease:'linear', duration:1.35}}
+        
+        ><Card title="Get Started 🚀" content="Learn how to download the application and how to set it up on your device." page="/get-started"/></motion.div>
+        <motion.div
+        
+        initial={{ y: 20 }}
+        whileInView={{ y: 0 }}
+        viewport={{ once: true }}
+        transition={{type: 'spring', ease:'linear', duration:1.35}}
+        
+        ><Card title="Get API Key 🔑" content="Learn how to setup your own API key in the application." page="/api-key"/></motion.div>
+        <motion.div
+        
+        initial={{ x: 20 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{type: 'spring', ease:'linear', duration:1.35}}
+        
+        ><Card title="Team 🤝" content= "Get to know more about us." page="/about"/></motion.div>
 
     </div>
     </div>

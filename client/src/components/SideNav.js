@@ -4,6 +4,7 @@ import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import { SidebarData } from './SidebarData'
 import { IconContext } from 'react-icons/lib'
+import { motion } from 'framer-motion'
 
 const SideNav = () => {
 
@@ -16,7 +17,13 @@ const SideNav = () => {
     }
 
   return (
-    <div>
+    <motion.div
+    
+    initial={{ x: -150 }}
+    animate={{ x: 0 }}
+    transition={{ duration: 0.8 }}
+    
+    >
         <IconContext.Provider value={{color:'#fff'}}>
         <div className='navbar'>
 
@@ -58,7 +65,7 @@ const SideNav = () => {
         </div>
         </IconContext.Provider>
 
-    </div>
+    </motion.div>
   )
 }
 

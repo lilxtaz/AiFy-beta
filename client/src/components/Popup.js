@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as AiIcons from 'react-icons/ai';
 import IconButton from '@mui/material/IconButton';
-
+import { motion } from 'framer-motion';
 
 const Popup = (props) => {
 
@@ -10,7 +10,13 @@ const Popup = (props) => {
   return (props.trigger)&&
 
     <div className='popup'>
-        <div className='popup-inner'>
+        <motion.div 
+        
+        initial={{ y: -500 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8 }}
+        
+        className='popup-inner'>
         <div>
         <IconButton 
         onMouseEnter={() => setnewsColor(true)}
@@ -26,7 +32,7 @@ const Popup = (props) => {
         </IconButton></div>
         {props.children}
 
-        </div>
+        </motion.div>
     </div>
 }
 

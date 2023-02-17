@@ -7,21 +7,55 @@ import * as BiIcons from 'react-icons/bi'
 import Button from '@mui/material-next/Button';
 import Popup from './Popup';
 import MailchimpFormContainer from './MailchimpFormContainer';
+import { motion } from 'framer-motion';
 
 const Header = () => {
 
   const [newsColor, setnewsColor] = useState(false);
   const [buttonPopup, setButtonPopup] = useState(false);
 
-
   return (
     <div className='container' style={{marginBottom: '1rem'}}>
 
-        <div className='text-conatiner'><h1 className='headerTitle'>AiFy <br/></h1><h3 className='subheadingTitle'>GPT AI Chat Bot</h3></div>
-        <h3 className='headerText'>Access Chat GPT from any app on your<br /> device and get instant responses to your prompts.</h3>
-       <Link to={'https://play.google.com/store/apps/details?id=com.textaify'} target="_blank"><img src={play} alt='Google Play Icon' width={162} height={63}/></Link>
-       <Link to={'https://play.google.com/store/apps/details?id=com.textaify'} target="_blank"><img src={extension} alt='Google Play Icon' width={150} style={{borderRadius:'10px', margin:'10px 0 0 7px'}}/></Link>
-       <div onClick={()=>setButtonPopup(true)} className="newsletter-btn"><Button sx={{backgroundColor:'white', color: 'black', width: '250px', margin: '30px 0', paddingLeft:'0px', paddingRight:'12px' }}
+        <motion.div 
+
+        initial={{ x: -300 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{type: 'spring', ease:'linear', duration:0.8}}
+         
+        className='text-conatiner'><h1 className='headerTitle'>AiFy <br/></h1><h3 className='subheadingTitle'>GPT AI Chat Bot</h3></motion.div>
+        <motion.h3 
+        
+        initial={{ x: -300 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{type: 'spring', ease:'linear', duration:0.8}}
+        
+        className='headerText'>Access Chat GPT from any app on your<br /> device and get instant responses to your prompts.</motion.h3>
+       <Link to={'https://play.google.com/store/apps/details?id=com.textaify'} target="_blank"><motion.img 
+       
+       initial={{ x: 300 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{type: 'spring', ease:'linear', duration:0.8}}
+       
+       src={play} alt='Google Play Icon' width={162} height={63}/></Link>
+       <Link to={'https://play.google.com/store/apps/details?id=com.textaify'} target="_blank"><motion.img 
+       
+       initial={{ x: 300 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{type: 'spring', ease:'linear', duration:0.8}}
+       
+       src={extension} alt='Google Extension Icon' width={150} style={{borderRadius:'10px', margin:'10px 0 0 7px'}}/></Link>
+       <motion.div 
+
+            initial={{ y: 250 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5 }}
+       
+            onClick={()=>setButtonPopup(true)} className="newsletter-btn"><Button sx={{backgroundColor:'white', color: 'black', width: '250px', margin: '30px 0', paddingLeft:'0px', paddingRight:'12px' }}
             onMouseEnter={() => setnewsColor(true)}
             onMouseLeave={() => setnewsColor(false)}
             
@@ -30,7 +64,7 @@ const Header = () => {
             size="large"
             variant="elevated"
             startIcon={<BiIcons.BiNews className='downloadIcon' style={{ color: newsColor ? 'white' : 'black' }}/>}
-        >Sign Up to Our Newsletter!</Button></div>
+        >Sign Up to Our Newsletter!</Button></motion.div>
         
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
 
@@ -39,7 +73,11 @@ const Header = () => {
         </Popup>
         
         <div className="headerImg backblur"><img src={headerimg} alt="test-img" width="400" height="400" ></img></div>
-        <div className="headerImg"><img src={headerimg} alt="headerImg" width="520" height="520" ></img></div>
+        <motion.div 
+        
+        className="headerImg">
+          <img src={headerimg} alt="headerImg" width="520" height="520" ></img>
+        </motion.div>
         
 
 

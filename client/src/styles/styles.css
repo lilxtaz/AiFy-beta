@@ -35,7 +35,7 @@ body{
 .container-logo{
 
     height: 56px;
-    width: 56px;
+    width: auto;
     cursor: pointer;
 
 }
@@ -165,16 +165,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vh;
     
 
 }
 
 .slider{
 
-    height: 120px;
-    width: 900px;
+    width: 780px;
     position: relative;
-    height: 55vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,6 @@ body{
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
-    min-width: 500px;
 
 }
 
@@ -390,6 +389,12 @@ body{
 
 }
 
+.started-img{
+
+    margin-left: 80px;
+
+}
+
 .step{
 
     display: flex;
@@ -420,14 +425,6 @@ body{
     width: auto;
     height: auto;
     border-radius: 10px;
-
-}
-
-.started-img{
-
-    position:absolute;
-    bottom:48%; 
-    left:375px;
 
 }
 
@@ -812,7 +809,7 @@ header .nav-btn{
 }
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1366px){
 
     .popup-inner{
 
@@ -873,8 +870,7 @@ header .nav-btn{
 
     .started-img{
 
-        bottom: unset;
-        left: 240px;
+        margin-left: 0;
 
     }
 
@@ -1007,8 +1003,8 @@ header .nav-btn{
     .slider{
     
         position: relative;
-        height: 20vh;
-        width: 41vh;
+        height: 38vh;
+        min-width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1079,6 +1075,7 @@ header .nav-btn{
         display: flex;
         flex-direction: column;
         text-align: center;
+        height: auto;
     
     }
     
@@ -1189,6 +1186,7 @@ header .nav-btn{
     header .responsive_nav{
 
         transform: none;
+        overflow-y: scroll;
 
     }
 

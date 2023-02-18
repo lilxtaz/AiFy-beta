@@ -19,19 +19,19 @@ const SideNav = () => {
   return (
     <motion.div
     
-    initial={{ x: -150 }}
-    animate={{ x: 0 }}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1}}
     transition={{ duration: 0.8 }}
     
     >
         <IconContext.Provider value={{color:'#fff'}}>
         <div className='navbar'>
 
-            <Link to={'#'} className='menu-bars'>
+            {!sidebar && <Link to={'#'} className='menu-bars' style={{transition: 'ease'}}>
 
                 <FaIcons.FaBars onClick={showSidebar}/>
 
-            </Link>
+            </Link>}
             <nav className={sidebar?'nav-menu active' : 'nav-menu' }>
 
                 <ul className='nav-menu-items'  onClick={showSidebar}>

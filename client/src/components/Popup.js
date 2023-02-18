@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as AiIcons from 'react-icons/ai';
 import IconButton from '@mui/material/IconButton';
-import { motion } from 'framer-motion';
+import { motion} from "framer-motion/dist/framer-motion";
 
 const Popup = (props) => {
 

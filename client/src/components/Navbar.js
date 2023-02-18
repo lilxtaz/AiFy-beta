@@ -7,7 +7,7 @@ import logo from '../images/logo.png';
 import { FlagIcon } from "react-flag-kit";
 import { Link } from "react-router-dom";
 import * as BiIcons from 'react-icons/bi'
-import { motion } from "framer-motion";
+import { motion} from "framer-motion/dist/framer-motion";
 
 
 function Navbar(){

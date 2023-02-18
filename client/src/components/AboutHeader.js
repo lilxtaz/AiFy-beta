@@ -4,7 +4,7 @@ import Members from './Members'
 import sandesh from '../images/sandesh.jpg'
 import hamza from '../images/hamza.jpg'
 import talha from '../images/talha.jpg'
-import { motion } from 'framer-motion'
+import { motion} from "framer-motion/dist/framer-motion";
 
 const AboutHeader = () => {
   return (

@@ -6,7 +6,7 @@ import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import KeyboardVoiceOutlinedIcon from '@mui/icons-material/KeyboardVoiceOutlined';
 import RestorePageIcon from '@mui/icons-material/RestorePage';
 import RestorePageOutlinedIcon from '@mui/icons-material/RestorePageOutlined';
-import { motion } from 'framer-motion';
+import { motion} from "framer-motion/dist/framer-motion";
 
 
 const Stats = () => {

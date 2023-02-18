@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import { motion } from 'framer-motion'
+import { motion} from "framer-motion/dist/framer-motion";
 
 const Tutorial = () => {
   return (

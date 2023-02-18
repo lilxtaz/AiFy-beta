@@ -3,7 +3,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import WhitePlayStore from '../images/play_store.png';
 import Typical from 'react-typical';
-import { motion } from 'framer-motion';
+import { motion} from "framer-motion/dist/framer-motion";
 
 const Slider = ({slides}) => {
 

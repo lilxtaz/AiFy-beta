@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion} from "framer-motion/dist/framer-motion";
 import Button from '@mui/material-next/Button';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';

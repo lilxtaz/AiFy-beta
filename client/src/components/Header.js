@@ -7,7 +7,7 @@ import * as BiIcons from 'react-icons/bi'
 import Button from '@mui/material-next/Button';
 import Popup from './Popup';
 import MailchimpFormContainer from './MailchimpFormContainer';
-import { motion } from 'framer-motion';
+import { motion} from "framer-motion/dist/framer-motion";
 
 const Header = () => {
 

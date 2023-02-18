@@ -3,6 +3,7 @@ import bEye from '../images/bullseye.png'
 import Members from './Members'
 import sandesh from '../images/sandesh.jpg'
 import hamza from '../images/hamza.jpg'
+import talha from '../images/talha.jpg'
 import { motion } from 'framer-motion'
 
 const AboutHeader = () => {
@@ -54,7 +55,7 @@ const AboutHeader = () => {
               viewport={{ once: true }}
               transition={{type: 'spring', ease:'linear', duration:1.35}}
               
-              ><Members name='Talha Zaigham' content='I am Talha' image={hamza}/></motion.div>
+              ><Members name='Talha Zaigham' content='I am Talha' image={talha}/></motion.div>
               <motion.div
               
               initial={{ x: 20 }}

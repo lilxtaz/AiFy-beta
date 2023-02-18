@@ -165,7 +165,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vh;
+
     
 
 }
@@ -1004,7 +1004,7 @@ header .nav-btn{
     
         position: relative;
         height: 38vh;
-        min-width: 500px;
+        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;

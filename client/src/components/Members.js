@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import Button from '@mui/material-next/Button';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Link } from 'react-router-dom';
 import '@fontsource/roboto/300.css';
@@ -35,9 +34,9 @@ const Members = (props) => {
                 {props.content}
             </p>
 
-            <Button component={Link} to={props.page} className='card-btn' variant='text'><InstagramIcon sx={{ fontSize: 30 }}/></Button>
-            <Button component={Link} to={props.page} className='card-btn' variant='text'><FacebookIcon sx={{ fontSize: 30 }}/></Button>
-            <Button component={Link} to={props.page} className='card-btn' variant='text'><TwitterIcon sx={{ fontSize: 30 }}/></Button>
+            <Button component={Link} to={props.insta} target="_blank" className='card-btn' variant='text'><InstagramIcon sx={{ fontSize: 30 }}/></Button>
+            <Button component={Link} to={props.fb} target="_blank" className='card-btn' variant='text'><FacebookIcon sx={{ fontSize: 30 }}/></Button>
+
 
             </motion.div>)}
 

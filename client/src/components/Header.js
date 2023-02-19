@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import headerimg from '../images/header-img.png';
+import headerimg from '../images/header-img_2 copy.png';
+import greenBox from '../images/real-green-box.png'
+import redBox from '../images/red-box.png'
+import characterBox from '../images/features_1.png'
 import play from '../images/google-play-badge.png'
 import extension from '../images/chrome-extension-badge.png'
 import { Link } from 'react-router-dom'
@@ -72,11 +75,52 @@ const Header = () => {
 
         </Popup>
         
-        <div className="headerImg backblur"><img src={headerimg} alt="test-img" width="400" height="400" ></img></div>
-        <motion.div 
-        
-        className="headerImg">
-          <img src={headerimg} alt="headerImg" width="520" height="520" ></img>
+        <div className="backblur">
+          <img src={headerimg} alt="test-img" width="400" height="400" />
+
+        </div>
+        <motion.div className="headerImg">
+          <motion.div
+          
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          transition={{ duration: 0.5 }}
+          
+          >
+          
+          <img src={greenBox} alt="test-img" width="240" height="427" className='green-box'/></motion.div>
+
+          <motion.div
+          
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          
+          >
+          
+          <img src={redBox} alt="test-img" width="240" height="427" className='red-box'/></motion.div>
+
+          <motion.div
+          
+          initial={{ x: 100 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+          
+          >
+          
+          <img src={characterBox} alt="test-img" width="240" height="146" className='character-box'/></motion.div>
+
+          <motion.div
+          
+          initial={{ y: 300 }}
+          whileInView={{ y: 0 }}
+          transition= {{type: "spring",bounce: 0.4,duration: 0.8, ease:'linear'}}
+          viewport={{ once: true }}
+          
+          >
+          
+          <img src={headerimg} alt="headerImg" width="1000px" height="700px" style={{zIndex: '3'}} className='iphone' /></motion.div>
+
         </motion.div>
         
 

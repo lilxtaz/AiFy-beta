@@ -10,7 +10,7 @@
   "static/media/300.css": "/static/media/roboto-latin-300-normal.b9c29351.woff2",
   "static/media/400.css": "/static/media/roboto-latin-400-normal.15d9f621.woff2",
   "static/media/500.css": "/static/media/roboto-latin-500-normal.3a44e06e.woff2",
-  "static/media/700.css": "/static/media/roboto-latin-700-normal.e9f5aaf5.woff2",
+  "static/media/700.css": "/static/media/roboto-all-700-normal.aa462125.woff",
   "static/media/header-img.png": "/static/media/header-img.50709edc.png",
   "static/media/hamza.jpg": "/static/media/hamza.f707572f.jpg",
   "static/media/talha.jpg": "/static/media/talha.991315b8.jpg",
@@ -33,6 +33,6 @@
   "static/css/1.fbdc1fef.chunk.css.map": "/static/css/1.fbdc1fef.chunk.css.map",
   "static/css/main.7c991b23.chunk.css.map": "/static/css/main.7c991b23.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.e35e655985fc465287ce676671d47298.js": "/precache-manifest.e35e655985fc465287ce676671d47298.js",
+  "precache-manifest.b5640fc7038a79d0402d2d0e6cb75238.js": "/precache-manifest.b5640fc7038a79d0402d2d0e6cb75238.js",
   "service-worker.js": "/service-worker.js"
 }

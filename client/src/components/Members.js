@@ -21,8 +21,8 @@ const Members = (props) => {
 
         <div className='card-container'>
 
-        <motion.div transition={{layout:{duration: 1, type: "spring"}}} layout onClick={()=>{setIsOpen(!isOpen);setDownBtn(!downBtn);}} style={{borderRadius: "1rem", boxShadow: "0px 10px 30px rgba(33, 38, 43, 0.2)", minWidth: "40vh", display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', padding:'3rem 2rem 2.35rem 2rem' }} className='card'>
-            <motion.img src={props.image} style={{width: '25%', borderRadius: '100%', marginBottom:'2rem'}} layout="position"/>
+        <motion.div transition={{layout:{duration: 1, type: "spring"}}} layout onClick={()=>{setIsOpen(!isOpen);setDownBtn(!downBtn);}} style={{borderRadius: "1rem", boxShadow: "0px 10px 30px rgba(33, 38, 43, 0.2)", width: "50vh", display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', padding:'1.5rem 2rem 1.15rem 2rem' }} className='card'>
+            <motion.img src={props.image} style={{width: '25%', borderRadius: '100%', marginBottom:'1rem'}} layout="position"/>
             <motion.h1 style={{fontSize: '24px'}} layout="position" >{props.name}</motion.h1>
             {downBtn && (<motion.div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <ArrowDropDownIcon fontSize='large' sx={{color: '#3c4752'}}/>

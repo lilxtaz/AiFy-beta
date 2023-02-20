@@ -26,10 +26,10 @@ const Slider = ({slides}) => {
     <div className='slider-block' >
         <motion.div 
         
-        initial={{ x: -50 }}
-        whileInView={{ x: 0 }}
+        initial={{ y: -50 }}
+        whileInView={{ y: 0 }}
         viewport={{ once: true }}
-        transition={{type: 'spring', ease:'linear', duration:0.8}}
+        transition={{type: 'spring', ease:'linear', duration:1}}
         
         className='slider-block-text'>
 
@@ -38,10 +38,10 @@ const Slider = ({slides}) => {
         </motion.div>
         <motion.div 
         
-        initial={{ x: 50 }}
-        whileInView={{ x: 0 }}
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
         viewport={{ once: true }}
-        transition={{type: 'spring', ease:'linear', duration:0.8}}
+        transition={{type: 'spring', ease:'linear', duration:1}}
         
         className='slider'>
         <ChevronLeftIcon fontSize="large" className='slide-left-arrow' onClick={prevSlide} />

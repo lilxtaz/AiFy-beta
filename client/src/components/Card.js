@@ -18,7 +18,7 @@ const Card = (props) => {
   return (
     <div className='card-container'>
 
-        <motion.div transition={{layout:{duration: 1, type: "spring"}}} layout onClick={()=>{setIsOpen(!isOpen);setDownBtn(!downBtn);}} style={{borderRadius: "1rem", boxShadow: "0px 10px 30px rgba(33, 38, 43, 0.2)", minWidth: "40vh"}} className='card'>
+        <motion.div transition={{layout:{duration: 1.35, type: "spring"}}} layout onClick={()=>{setIsOpen(!isOpen);setDownBtn(!downBtn);}} style={{borderRadius: "1rem", boxShadow: "0px 10px 30px rgba(33, 38, 43, 0.2)", minWidth: "40vh"}} className='card'>
 
             <motion.h1 layout="position" >{props.title}</motion.h1>
             {downBtn && (<motion.div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

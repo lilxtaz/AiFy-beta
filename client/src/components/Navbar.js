@@ -3,7 +3,7 @@
 import {FaBars, FaTimes} from "react-icons/fa"
 import React, {useEffect, useRef, useState}from 'react'
 import "../styles/styles.css"
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 import { FlagIcon } from "react-flag-kit";
 import { Link } from "react-router-dom";
 import * as BiIcons from 'react-icons/bi'
@@ -43,7 +43,7 @@ function Navbar(){
     
     >
 
-        <div className="container-logo"><Link to={'/'}><img src={logo} className="logo" alt="logo" width="60" height="60" ></img></Link></div>
+        <div className="container-logo"><Link to={'/'}><img src={logo} className="logo" alt="logo" width="60" height="60" color="white" ></img></Link></div>
         <nav ref={navRef}>
  
             <a><Link to={'/home'}>Home{(chevron&&<BiIcons.BiChevronRight className="nav-chevron"/>)}</Link></a>

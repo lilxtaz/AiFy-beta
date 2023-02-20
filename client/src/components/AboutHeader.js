@@ -9,7 +9,7 @@ import { motion} from "framer-motion/dist/framer-motion";
 const AboutHeader = () => {
   return (
     <div>
-      <div className='started-container'>
+      <div className='about-container'>
           <div className='header-container'>
             <motion.div 
             

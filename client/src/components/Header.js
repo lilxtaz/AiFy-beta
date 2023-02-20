@@ -22,7 +22,7 @@ const Header = () => {
 
         <motion.div 
 
-        initial={{ x: -300 }}
+        initial={{ x: -30 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{type: 'spring', ease:'linear', duration:0.8}}
@@ -30,7 +30,7 @@ const Header = () => {
         className='text-conatiner'><h1 className='headerTitle'>AiFy <br/></h1><h3 className='subheadingTitle'>GPT AI Chat Bot</h3></motion.div>
         <motion.h3 
         
-        initial={{ x: -300 }}
+        initial={{ x: -30 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{type: 'spring', ease:'linear', duration:0.8}}
@@ -38,20 +38,20 @@ const Header = () => {
         className='headerText'>Access Chat GPT from any app on your<br /> device and get instant responses to your prompts.</motion.h3>
        <Link to={'https://play.google.com/store/apps/details?id=com.textaify'} target="_blank"><motion.img 
        
-       initial={{ x: 300 }}
+       initial={{ x: 30 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{type: 'spring', ease:'linear', duration:0.8}}
        
-       src={play} alt='Google Play Icon' width={162} height={63}/></Link>
+       src={play} alt='Google Play Icon'/></Link>
        <Link to={'https://play.google.com/store/apps/details?id=com.textaify'} target="_blank"><motion.img 
        
-       initial={{ x: 300 }}
+       initial={{ x: 30 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{type: 'spring', ease:'linear', duration:0.8}}
        
-       src={extension} alt='Google Extension Icon' width={150} style={{borderRadius:'10px', margin:'10px 0 0 7px'}}/></Link>
+       src={extension} alt='Google Extension Icon' style={{borderRadius:'10px', margin:'10px 0 0 7px'}}/></Link>
        <motion.div 
 
             initial={{ y: 250 }}

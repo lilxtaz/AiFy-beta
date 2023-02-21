@@ -59,7 +59,7 @@ const Slider = ({slides}) => {
 
                         <div className='play'> 
                             <img src={WhitePlayStore} alt="play-store-icon" width="30" height="30" />
-                            <p>Google Play Review</p>
+                            <p>Review</p>
                         </div>   
                 </div>
 

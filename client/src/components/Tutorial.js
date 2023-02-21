@@ -14,6 +14,7 @@ const Tutorial = () => {
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{type: 'spring', ease:'linear', duration:1.35}}
+        className="member-container"
         
         ><Card title="Get Started 🚀" content="Learn how to download the application and how to set it up on your device." page="/get-started"/></motion.div>
         <motion.div
@@ -22,6 +23,7 @@ const Tutorial = () => {
         whileInView={{ y: 0 }}
         viewport={{ once: true }}
         transition={{type: 'spring', ease:'linear', duration:1.35}}
+        className="member-container"
         
         ><Card title="Get API Key 🔑" content="Learn how to setup your own API key in the application." page="/api-key"/></motion.div>
         <motion.div
@@ -30,6 +32,7 @@ const Tutorial = () => {
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{type: 'spring', ease:'linear', duration:1.35}}
+        className="member-container"
         
         ><Card title="Team 🤝" content= "Get to know more about us." page="/about"/></motion.div>
 

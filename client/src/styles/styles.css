@@ -329,6 +329,7 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 0 2rem;
 
 }
 
@@ -340,7 +341,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 50vh !important;
+    width: 50vh;
     
 
 }
@@ -863,7 +864,7 @@ header .nav-btn{
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px){
 
     .popup-inner{
 
@@ -1018,6 +1019,7 @@ header .nav-btn{
         width: 20rem;
         text-align: center;
         color: var(--mainColor);
+        padding: 0 2.2rem;
     
     }
     
@@ -1218,7 +1220,7 @@ header .nav-btn{
         flex-direction: column;
         align-items: center;
         padding: 0;
-        margin: 5rem 3.5rem;
+        margin: 3rem 0rem;
 
     }
 
@@ -1317,7 +1319,7 @@ header .nav-btn{
 
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (max-width: 1366px) and (min-width: 801px) {
 
     .header-container p{
 
@@ -1397,10 +1399,15 @@ header .nav-btn{
 
     }
 
+    .member-container{
+
+        width: 38%;
+
+    }
+
     .expand{
 
         padding-top: 0.65rem;
-        transform: scale(0.8);
 
     }
 
@@ -1417,12 +1424,14 @@ header .nav-btn{
     
         font-weight: 600;
         font-size: 18px;
+        margin: 0.5rem;
     
     }
     
     .slide-review h3{
     
         font-weight: 400;
+        font-size: 12px;
     
     }
     
@@ -1441,10 +1450,9 @@ header .nav-btn{
     }
 
     .slider{
-
         position: relative;
-        min-width: 600px;
-        max-width: 600px;
+        min-width: 60vh;
+        max-width: 60vh;
         height: 60vh;
         width: auto;
         display: flex;
@@ -1461,7 +1469,7 @@ header .nav-btn{
     
     .play{
 
-        bottom: -35%;
+        display: none;
 
     }
 

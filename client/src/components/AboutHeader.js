@@ -46,6 +46,7 @@ const AboutHeader = () => {
               whileInView={{ x: 0 }}
               viewport={{ once: true }}
               transition={{type: 'spring', ease:'linear', duration:1.35}}
+              className="member-container"
               
               ><Members name='Sandesh Veerani' fb='https://www.facebook.com/sumit.kumarveerani' insta='https://www.instagram.com/sandeshveerani4/' content='I am Sandesh' image={sandesh}/></motion.div>
               <motion.div
@@ -54,6 +55,7 @@ const AboutHeader = () => {
               whileInView={{ y: 0 }}
               viewport={{ once: true }}
               transition={{type: 'spring', ease:'linear', duration:1.35}}
+              className="member-container"
               
               ><Members name='Talha Zaigham' fb='https://www.facebook.com/talha.mostwanted' insta='https://www.instagram.com/talha._.z/' content='I am Talha'  image={talha}/></motion.div>
               <motion.div
@@ -62,6 +64,7 @@ const AboutHeader = () => {
               whileInView={{ x: 0 }}
               viewport={{ once: true }}
               transition={{type: 'spring', ease:'linear', duration:1.35}}
+              className="member-container"
               
               ><Members name='Hamza Saleem' fb='https://www.facebook.com/profile.php?id=100028419773593' insta='https://www.instagram.com/ham._.sal/' content='I am Hamza' image={hamza}/></motion.div>
       </div>

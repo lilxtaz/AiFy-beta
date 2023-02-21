@@ -205,6 +205,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vh;
 
     
 
@@ -212,7 +213,7 @@ body{
 
 .slider{
 
-    width: 780px;
+    width: 100vh;
     position: relative;
     height: 45vh;
     display: flex;
@@ -285,6 +286,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 40vh;
 
 }
 
@@ -307,6 +309,7 @@ body{
 
     position: absolute;
     bottom: 0;
+    left: 90%;
     right: 0;
     z-index: 10;
     display: flex;

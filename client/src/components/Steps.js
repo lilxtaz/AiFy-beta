@@ -9,7 +9,7 @@ const Steps = (props) => {
     animate={{ x: 0 }}
     transition={{ duration: 0.8 }}
     
-    className='step' style={{flexDirection:props.dir, position:props.pos}}>
+    className='step' style={{flexDirection:props.dir, position:props.pos, overflow:'hidden'}}>
       <div className='step-text'>
         <h1>{props.title}</h1>
         <h3>{props.content}</h3>

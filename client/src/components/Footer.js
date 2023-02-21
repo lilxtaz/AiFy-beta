@@ -22,6 +22,7 @@ const styles = {
     color: '#fff',
     padding: '2rem',
     textAlign: 'center',
+    overflow: 'hidden'
   },
   text: {
     margin: 0,

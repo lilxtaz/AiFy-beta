@@ -126,7 +126,7 @@ const Header = () => {
           
           >
           
-          <img src={headerimg} alt="headerImg" width="1000px" height="700px" style={{zIndex: '3'}} className='iphone' /></motion.div>
+          <img src={headerimg} alt="headerImg" width="1000px" height="700px" className='iphone' /></motion.div>
 
         </motion.div>
         

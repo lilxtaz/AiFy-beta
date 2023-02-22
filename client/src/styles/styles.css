@@ -1462,8 +1462,8 @@ header .nav-btn{
 
     .slider{
         position: relative;
-        min-width: 60vw;
-        max-width: 60vh;
+        min-width: 70vh;
+        max-width: 70vh;
         height: 60vh;
         width: auto;
         display: flex;

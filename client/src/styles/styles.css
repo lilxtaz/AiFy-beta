@@ -360,7 +360,7 @@ body{
 
     padding-top: 1rem;
     line-height: 150%;
-    width: 20rem;
+    width: 40vh;
     text-align: center;
     color: var(--mainColor);
 
@@ -867,7 +867,7 @@ header .nav-btn{
 }
 
 
-@media only screen and (max-width: 1176px){
+@media only screen and (max-width: 768px){
 
     .popup-inner{
 
@@ -1322,7 +1322,13 @@ header .nav-btn{
 
 }
 
-@media only screen and (max-width: 1366px) and (min-width: 1177px) {
+@media only screen and (max-width: 1366px) and (min-width: 769px) {
+
+    .container{
+
+        padding: 0;
+
+    }
 
     .header-container p{
 

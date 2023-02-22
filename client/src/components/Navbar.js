@@ -37,6 +37,7 @@ function Navbar(){
 
     return (<motion.header
     
+    style={{overflow: "hidden"}}
     initial={{ y: -50 }}
     animate={{ y: 0 }}
     transition={{ duration: 0.15 }}

@@ -28,7 +28,7 @@ body{
 
     background: var(--backgroundColor);
     font-family: 'Titillium Web', sans-serif !important;
-    
+    overflow-x: hidden;
 
 }
 
@@ -606,7 +606,7 @@ span{
     justify-content: space-between;
     color: var(--textColor);
     flex-direction: column;
-    margin: 0 4rem;
+    margin: 3rem 4rem;
 
 }
 
@@ -867,7 +867,7 @@ header .nav-btn{
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1176px){
 
     .popup-inner{
 
@@ -1322,7 +1322,7 @@ header .nav-btn{
 
 }
 
-@media only screen and (max-width: 1366px) and (min-width: 801px) {
+@media only screen and (max-width: 1366px) and (min-width: 1177px) {
 
     .header-container p{
 

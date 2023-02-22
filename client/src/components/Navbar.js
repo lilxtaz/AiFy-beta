@@ -37,7 +37,6 @@ function Navbar(){
 
     return (<motion.header
     
-    style={{overflow: "hidden"}}
     initial={{ y: -50 }}
     animate={{ y: 0 }}
     transition={{ duration: 0.15 }}
@@ -69,7 +68,7 @@ function Navbar(){
 
         </button>
 
-        <div className="nav-country"><FlagIcon code={country} height="16" width="26" className="nav-country-flag"/><p>{country}</p></div> 
+        <a className="nav-country"><FlagIcon code={country} height="16" width="26" className="nav-country-flag"/><p>{country}</p></a> 
         
         
 

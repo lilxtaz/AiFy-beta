@@ -19,7 +19,6 @@ const Stats = () => {
     <div className='props-container'>
       <motion.div 
 
-        style={{overflow: "hidden"}}
         initial={{ x: -100 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
@@ -34,7 +33,6 @@ const Stats = () => {
         </motion.div>
         <motion.div 
 
-        style={{overflow: "hidden"}}
         initial={{ x: -100 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
@@ -49,7 +47,6 @@ const Stats = () => {
         </motion.div>
         <motion.div 
         
-        style={{overflow: "hidden"}}
         initial={{ x: -100 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}

@@ -26,7 +26,6 @@ const Slider = ({slides}) => {
     <div className='slider-block' >
         <motion.div 
         
-        style={{overflow: "hidden"}}
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         viewport={{ once: true }}
@@ -39,7 +38,6 @@ const Slider = ({slides}) => {
         </motion.div>
         <motion.div 
         
-        style={{overflow: "hidden"}}
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         viewport={{ once: true }}

@@ -22,7 +22,6 @@ const Header = () => {
 
         <motion.div 
 
-        style={{overflow: "hidden"}}
         initial={{ x: -30 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
@@ -31,7 +30,6 @@ const Header = () => {
         className='text-conatiner'><h1 className='headerTitle'>AiFy <br/></h1><h3 className='subheadingTitle'>GPT AI Chat Bot</h3></motion.div>
         <motion.h3 
         
-        style={{overflow: "hidden"}}
         initial={{ x: -30 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
@@ -56,7 +54,6 @@ const Header = () => {
        src={extension} alt='Google Extension Icon' style={{borderRadius:'10px', margin:'10px 0 0 7px'}}/></Link>
        <motion.div 
 
-            style={{overflow: "hidden"}}
             initial={{ y: 250 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
@@ -85,7 +82,6 @@ const Header = () => {
         <motion.div className="headerImg">
           <motion.div
           
-          style={{overflow: "hidden"}}
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           transition={{ duration: 0.5 }}
@@ -96,7 +92,6 @@ const Header = () => {
 
           <motion.div
           
-          style={{overflow: "hidden"}}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -107,7 +102,6 @@ const Header = () => {
 
           <motion.div
           
-          style={{overflow: "hidden"}}
           initial={{ x: 100 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5 }}
@@ -118,7 +112,6 @@ const Header = () => {
 
           <motion.div
           
-          style={{overflow: "hidden"}}
           initial={{ y: 300 }}
           whileInView={{ y: 0 }}
           transition= {{type: "spring",bounce: 0.4,duration: 0.8, ease:'linear'}}

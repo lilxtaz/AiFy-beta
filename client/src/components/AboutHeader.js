@@ -13,7 +13,6 @@ const AboutHeader = () => {
           <div className='header-container'>
             <motion.div 
             
-            style={{overflow: "hidden"}}
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
@@ -44,7 +43,6 @@ const AboutHeader = () => {
       <div className='tutorial-container'>
               <motion.div
               
-              style={{overflow: "hidden"}}
               initial={{ x: -20 }}
               whileInView={{ x: 0 }}
               viewport={{ once: true }}
@@ -54,7 +52,6 @@ const AboutHeader = () => {
               ><Members name='Sandesh Veerani' fb='https://www.facebook.com/sumit.kumarveerani' insta='https://www.instagram.com/sandeshveerani4/' content='I am Sandesh' image={sandesh}/></motion.div>
               <motion.div
               
-              style={{overflow: "hidden"}}
               initial={{ y: 20 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true }}
@@ -64,7 +61,6 @@ const AboutHeader = () => {
               ><Members name='Talha Zaigham' fb='https://www.facebook.com/talha.mostwanted' insta='https://www.instagram.com/talha._.z/' content='I am Talha'  image={talha}/></motion.div>
               <motion.div
               
-              style={{overflow: "hidden"}}
               initial={{ x: 20 }}
               whileInView={{ x: 0 }}
               viewport={{ once: true }}

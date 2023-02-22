@@ -18,14 +18,14 @@ const Card = (props) => {
   return (
     <div className='card-container'>
 
-        <motion.div transition={{layout:{duration: 1.35, type: "spring"}}} layout onClick={()=>{setIsOpen(!isOpen);setDownBtn(!downBtn);}} style={{borderRadius: "1rem", boxShadow: "0px 10px 30px rgba(33, 38, 43, 0.2)", minWidth: "40vh", overflow: 'hidden'}} className='card'>
+        <motion.div transition={{layout:{duration: 1.35, type: "spring"}}} layout onClick={()=>{setIsOpen(!isOpen);setDownBtn(!downBtn);}} style={{borderRadius: "1rem", boxShadow: "0px 10px 30px rgba(33, 38, 43, 0.2)", minWidth: "40vh"}} className='card'>
 
             <motion.h1 layout="position" >{props.title}</motion.h1>
             {downBtn && (<motion.div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <ArrowDropDownIcon fontSize='large' sx={{color: '#3c4752'}}/>
             </motion.div>)}
             {isOpen && 
-            (<motion.div style={{overflow: "hidden"}} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} className='expand'>
+            (<motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.7}} className='expand'>
 
               <p>
                 {props.content}

@@ -867,7 +867,7 @@ header .nav-btn{
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
 
     .popup-inner{
 
@@ -1324,11 +1324,12 @@ header .nav-btn{
 
 }
 
-@media only screen and (max-width: 1366px) and (min-width: 769px) {
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
 
     .container{
 
         padding: 0;
+        margin: 12rem 5rem;
 
     }
 

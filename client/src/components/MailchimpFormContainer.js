@@ -4,7 +4,7 @@ import CustomForm from './CustomForm';
 
 const MailchimpFormContainer = props => {
 
-    const postUrl = "https://gmail.us21.list-manage.com/subscribe/post?u=87dcc51595580ee185c8026a1&id=94835de5dc";
+    const postUrl = "https://textaify.us12.list-manage.com/subscribe/post?u=9e972af2cdab80e444e72a34e&id=dd6c029aa5";
 
 
     return (
